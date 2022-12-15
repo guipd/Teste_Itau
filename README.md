@@ -1,7 +1,7 @@
 # Teste Front
 
 Criar uma aplicação em Angular que consuma a api do Spotify, disponibilizar duas telas.
-- listar os novos lançamentos
+- listar os novos lançamentos (Albuns)
 - Tela de Pesquisa (onde deve retornar o resultado do que for inserido no campo)
 
 ## Conteudo de cada pagina:
@@ -21,11 +21,18 @@ Necessario Paginação, Exibir apenas 5 resultados para cada item (Artista / Alb
 **Incluir testes para o codigo construído em Jest**
 
 -----------------------------------------------------------------------------------------------------
+#### API Spotify
 
 Documentação da API:
 https://developer.spotify.com/documentation/web-api/
 
-Token de acesso para ser utilizado:
-BQCf6qRClq2ZqvC_ax7FiOAYRnWuu1klz1iOkAq1hNHSQBMHwKhJDXnguTtsxQQwpXNVaITKmNCixdYMxPHPiFI_bZ-cAEw52xeksl9qPUNIIfIpH8k
+**Necessario gerar um token de acesso para bater nas APIs**
+Como gerar:
+
+POST - https://accounts.spotify.com/api/token
+
+HEADER:
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic MmJkODFkMzc3ZThmNGRhNWJiMjA0YzBiYmQ2NDY3ZGQ6NmFlNDg4NjE3ZTFmNGUyNDlkZWE3MDUwOThjY2I1YmI=
 
 
