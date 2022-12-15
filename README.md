@@ -27,6 +27,7 @@ Documentação da API:
 https://developer.spotify.com/documentation/web-api/
 
 **Necessario gerar um token de acesso para bater nas APIs**
+
 Como gerar:
 
 POST - https://accounts.spotify.com/api/token
