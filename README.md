@@ -33,7 +33,9 @@ Como gerar:
 POST - https://accounts.spotify.com/api/token
 
 HEADER:
+
 Content-Type: application/x-www-form-urlencoded
+
 Authorization: Basic MmJkODFkMzc3ZThmNGRhNWJiMjA0YzBiYmQ2NDY3ZGQ6NmFlNDg4NjE3ZTFmNGUyNDlkZWE3MDUwOThjY2I1YmI=
 
 
