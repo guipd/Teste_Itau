@@ -18,7 +18,7 @@ Carregar conteudo da pesquisa exibindo as musicas e albuns relacionados ao conte
 Necessario Paginação, Exibir apenas 5 resultados para cada item (Artista / Album)
 
 
-**Incluir testes para o codigo construído**
+**Incluir testes para o codigo construído em Jest**
 
 -----------------------------------------------------------------------------------------------------
 
