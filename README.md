@@ -9,12 +9,14 @@ Criar uma aplicação em Angular que consuma a api do Spotify, disponibilizar du
 ### Home:
 
 Conteudo dos novos lançamentos, com paginação. limitado a exibir apenas 10 registros por pagina
+
 Exibir Nome do album, Artista e foto de capa
 
 ### Tela de pesquisa:
 
 Exibir input para ação
 Carregar conteudo da pesquisa exibindo as musicas e albuns relacionados ao conteudo do input 
+
 Necessario Paginação, Exibir apenas 5 resultados para cada item (Artista / Album)
 
 
