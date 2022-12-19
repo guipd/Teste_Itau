@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Álbuns em alta</span>
+  <mat-form-field class="form-field">
+    <input  (keyup)="applyFilter($event)" #searchInput="matInput" matInput placeholder="Busque aqui">
+  </mat-form-field>
+</mat-toolbar>
+<div fxLayout="row wrap" class="content">
+  <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let item of items">
+    <app-card-album [name]="item.name" [artists]="item.artists" [image]="item.images[1].url"></app-card-album>
+  </div>
+</div>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>arrow_back</mat-icon>
+    <span [routerLink]="'/albums'">Voltar</span>
+  </button>
+</mat-menu>

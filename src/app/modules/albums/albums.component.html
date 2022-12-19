@@ -1,0 +1,21 @@
+<div>
+  <mat-toolbar>
+    <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Álbuns em alta</span>
+  </mat-toolbar>
+
+  <div fxLayout="row wrap" class="content">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let item of items">
+      <app-card-album [name]="item.name" [artists]="item.artists" [image]="item.images[1].url"></app-card-album>
+    </div>
+  </div>
+  <mat-paginator #paginator [length]="totalItems" [pageIndex]="pagination._page" [pageSize]="pagination._limit" (page)="onPageChange($event)"></mat-paginator>
+</div>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>search</mat-icon>
+    <span [routerLink]="'/buscar'">Buscar</span>
+  </button>
+</mat-menu>
